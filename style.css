@@ -1,0 +1,325 @@
+/* --- 1. Global Styles & Reset --- */
+:root {
+    --primary-color: #B9610B; /* Deep Rust from logo */
+    --background-white: #FFFFFF;
+    --background-light: #FFFCF2; /* Creamy white from reference */
+    --text-dark: #333333;
+    --text-grey: #6c757d;
+    --footer-bg: #212529; /* Dark charcoal from footer */
+    --footer-text: #f8f9fa;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+h1 { font-size: 2.5rem; color: var(--primary-color); }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.8rem; border-bottom: 2px solid var(--primary-color); display: inline-block; padding-bottom: 5px; margin-bottom: 1.5rem;}
+h4 { font-size: 1.25rem; }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- 2. Utility Classes --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #964d08;
+}
+
+/* --- 3. Header & Navigation --- */
+header {
+    background-color: var(--background-white);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#main-nav a {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#main-nav a:hover, #main-nav a.active {
+    color: var(--primary-color);
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default */
+}
+
+/* --- 4. Main Content Sections --- */
+
+/* A. Hero Simplified (Inspired by large image banner) */
+.hero-simplified {
+    position: relative;
+    color: white;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-slideshow {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(1.04);
+    transition: opacity 1.2s ease-in-out, transform 8s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hero-simplified::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.hero-content h2 { font-size: 3rem; margin-bottom: 0.5rem; line-height: 1.2;}
+.hero-content p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 1.5rem;}
+
+/* B. About Us */
+.about-section {
+    padding: 60px 0;
+    background-color: var(--background-white);
+}
+
+.about-intro {
+    max-width: 850px;
+    margin-bottom: 30px;
+}
+
+.about-intro p {
+    color: var(--text-grey);
+    font-size: 1.05rem;
+}
+
+.about-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.about-card {
+    padding: 22px;
+    border: 1px solid #eee;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-light);
+}
+
+.about-card h4 {
+    color: var(--primary-color);
+}
+
+.about-card p {
+    color: var(--text-grey);
+    font-size: 0.95rem;
+}
+
+/* C. Initiatives Grid */
+.initiatives-section {
+    padding: 60px 0;
+    background-color: var(--background-light);
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.card img {
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card h4 { margin-top: 10px; color: var(--text-dark); }
+.card p { color: var(--text-grey); font-size: 0.95rem; }
+
+/* D. Campus Overview (2-column layout) */
+.campus-section {
+    padding: 60px 0;
+}
+
+.campus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.campus-text address p { margin-bottom: 5px;}
+
+.campus-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* --- 5. Footer --- */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 50px 0 20px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-grid h4 { color: white; margin-bottom: 1.2rem;}
+
+.footer-links ul { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a:hover { color: var(--primary-color); text-decoration: underline; }
+
+.footer-social .social-icons span {
+    display: inline-block;
+    width: 30px; height: 30px;
+    background: #444; color: white;
+    text-align: center; line-height: 30px;
+    border-radius: 5px; margin-right: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* --- 6. Media Queries (Responsiveness) --- */
+
+/* For Tablets and small desktops */
+@media (max-width: 1024px) {
+    .grid-3 { grid-template-columns: 1fr 1fr; }
+    .hero-content h2 { font-size: 2.5rem; }
+}
+
+/* For Mobile Phones (approx < 768px) */
+@media (max-width: 768px) {
+    /* Header/Navigation */
+    .header-container { flex-wrap: wrap; }
+    
+    #main-nav { 
+        width: 100%; order: 3; display: none; /* Hide nav by default */ 
+        background: #fff; padding: 20px; border-top: 1px solid #eee; margin-top: 15px;
+    }
+    #main-nav ul { flex-direction: column; gap: 10px; text-align: center; }
+    
+    #main-nav.active { display: block; } /* Class to show nav */
+
+    .menu-toggle { 
+        display: block; /* Show hamburger button */
+        background: none; border: 1px solid #ddd; padding: 5px 10px; font-size: 1.5rem; cursor: pointer; color: #555; order: 2;
+    }
+
+    /* General Layout */
+    .grid-3 { grid-template-columns: 1fr; }
+    .campus-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; text-align: center;}
+
+    /* Content adjustments */
+    .hero-simplified { height: 50vh; }
+    .hero-content h2 { font-size: 1.8rem; }
+    .hero-content p { font-size: 1rem; }
+}

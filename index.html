@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVMVP - Replicated Structure (Demo)</title>
+    <!-- Google Fonts: Poppins (Headings) and Roboto (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Replace with actual logo image later -->
+                <h1>VVMVP</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#initiatives">Initiatives</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- Simple hamburger for mobile -->
+                <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Main Content -->
+    <main>
+        <!-- A. Hero Section -->
+        <section class="hero-simplified" aria-label="Hero slideshow">
+            <div class="hero-slideshow" aria-hidden="true">
+                <div class="hero-slide active" style="background-image: url('assets/slide-1.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('assets/slide-2.png');"></div>
+                <div class="hero-slide" style="background-image: url('assets/slide-3.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('assets/hero-campus.jpg');"></div>
+            </div>
+            <div class="container hero-content">
+                <h2>Welcome to Ved Vignan<br>Maha Vidya Peeth</h2>
+                <p>Nurturing ancient wisdom, empowering modern minds.</p>
+            </div>
+        </section>
+
+        <!-- B. About Us -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-intro">
+                    <h3>About Ved Vignan Maha Vidya Peeth</h3>
+                    <p>Established in 1981, Ved Vignan Maha Vidya Peeth (VVMVP) is a public charitable trust under the aegis of The Art of Living. We are dedicated to transforming lives through education, empowerment, and enlightenment.</p>
+                </div>
+                <div class="about-pillars">
+                    <article class="about-card">
+                        <h4>Education Excellence</h4>
+                        <p>We provide underprivileged children with comprehensive free education, transportation, uniforms, books, and nutritious mid-day meals.</p>
+                    </article>
+                    <article class="about-card">
+                        <h4>Women Empowerment</h4>
+                        <p>Our skill development programs help women build self-reliance and achieve economic independence.</p>
+                    </article>
+                    <article class="about-card">
+                        <h4>Rural Development</h4>
+                        <p>We promote sustainable practices and help build essential infrastructure in rural communities.</p>
+                    </article>
+                    <article class="about-card">
+                        <h4>Vedic Research</h4>
+                        <p>We are committed to studying, preserving, and sharing the knowledge and wisdom of the Vedic tradition.</p>
+                    </article>
+                    <article class="about-card">
+                        <h4>Medical &amp; Social Research</h4>
+                        <p>We advance healthcare initiatives and social welfare programs for the betterment of communities.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- C. Key Initiatives (3-Column Grid) -->
+        <section id="initiatives" class="initiatives-section">
+            <div class="container">
+                <h3>Our Core Programs</h3>
+                <div class="grid-3">
+                    <div class="card">
+                        <img src="assets/hero-campus.jpg" alt="Gurukul Education">
+                        <h4>Sri Sri Gurukul</h4>
+                        <p>Preserving and promoting the authentic Vedic system of learning.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/hero-campus.jpg" alt="Rural Projects">
+                        <h4>Rural Development</h4>
+                        <p>Sustainable initiatives empowering rural communities.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/hero-campus.jpg" alt="Seva Activities">
+                        <h4>Social Responsibility</h4>
+                        <p>Engaging in diverse community service projects across India.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- D. Campus Highlight Section (Inspired by the Reference Image Panel) -->
+        <section id="campus-overview" class="campus-section">
+            <div class="container campus-grid">
+                <div class="campus-text">
+                    <h3>Visit Our Campus</h3>
+                    <p>Experience the serene environment of the Ved Vignan Maha Vidya Peeth.</p>
+                    <address>
+                        <p>21st Km, Kanakapura Road, Bengaluru,</p>
+                        <p>Karnataka - 560 082, India</p>
+                    </address>
+                </div>
+                <div class="campus-image">
+                    <img src="assets/hero-campus.jpg" alt="Campus View">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 3. Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#initiatives">Gurukul</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Phone:</strong> +91 90360 05022</p>
+                <p><strong>Email:</strong> queries@vvmvp.org</p>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <!-- Basic icons -->
+                    <span>FB</span> <span>TW</span> <span>IG</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VVMVP. Developed by (Your Team Name)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
