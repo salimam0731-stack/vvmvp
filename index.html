@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VVMVP - Replicated Structure (Demo)</title>
-    <!-- Google Fonts: Poppins (Headings) and Roboto (Body) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Ved Vignan Maha Vidya Peeth | The Art of Living</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,37 +12,37 @@
     <!-- 1. Header & Navigation -->
     <header>
         <div class="container header-container">
-            <div class="logo">
-                <!-- Replace with actual logo image later -->
-                <h1>VVMVP</h1>
-            </div>
+            <a class="logo" href="index.html" aria-label="The Art of Living home">
+                <img src="assets/art-of-living-logo.png" alt="The Art of Living">
+            </a>
             <nav id="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#initiatives">Initiatives</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.8 12 3l9 7.8v9.1a1 1 0 0 1-1 1h-5.5v-6.2h-5V21H4a1 1 0 0 1-1-1z"/></svg>Home</a></li>
+                    <li><a href="https://programs.vvmvp.org/ashrams/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18H5zM8 6h2v2H8zm6 0h2v2h-2zM8 11h2v2H8zm6 0h2v2h-2zM8 16h2v2H8zm6 0h2v2h-2z"/></svg>Ashrams</a></li>
+                    <li><a href="https://programs.vvmvp.org/programs/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14a2 2 0 0 1 2 2v15l-4-2-5 2-5-2-4 2V5a2 2 0 0 1 2-2zm2 4h10M7 11h10M7 15h6"/></svg>Programs</a></li>
+                    <li><a href="https://programs.vvmvp.org/donate/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 5-8.8 11-8.8 11s-8.8-6-8.8-11A4.8 4.8 0 0 1 12 6a4.8 4.8 0 0 1 8.8 2.8z"/></svg>Donate</a></li>
+                    <li><a href="https://bangaloreashram.org/volunteer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20v-1.5a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4V20m7-9a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm9-1a3 3 0 1 0-1-5.8M22 20v-1.5a4 4 0 0 0-3-3.9"/></svg>Volunteer</a></li>
                 </ul>
-                <!-- Simple hamburger for mobile -->
-                <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
             </nav>
+            <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">&#9776;</button>
         </div>
     </header>
 
     <!-- 2. Main Content -->
     <main>
         <!-- A. Hero Section -->
-        <section class="hero-simplified" aria-label="Hero slideshow">
+        <section class="hero-simplified" aria-label="Welcome">
             <div class="hero-slideshow" aria-hidden="true">
-                <div class="hero-slide active" style="background-image: url('assets/slide-1.jpg');"></div>
+                <div class="hero-slide active" style="background-image: url('assets/slide-3.jpg');"></div>
                 <div class="hero-slide" style="background-image: url('assets/slide-2.png');"></div>
-                <div class="hero-slide" style="background-image: url('assets/slide-3.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('assets/slide-1.jpg');"></div>
                 <div class="hero-slide" style="background-image: url('assets/hero-campus.jpg');"></div>
             </div>
             <div class="container hero-content">
-                <h2>Welcome to Ved Vignan<br>Maha Vidya Peeth</h2>
-                <p>Nurturing ancient wisdom, empowering modern minds.</p>
+                <h2>Let’s Get<br>Started</h2>
+                <p class="hero-description">Learn powerful breathing techniques, deep meditations, life skill tools and practical wisdom that are easy to apply in daily life to be sustainably happy.</p>
             </div>
+            <span class="hero-pagination" aria-hidden="true"><span></span></span>
         </section>
 
         <!-- B. About Us -->
@@ -51,30 +50,76 @@
             <div class="container">
                 <div class="about-intro">
                     <h3>About Ved Vignan Maha Vidya Peeth</h3>
-                    <p>Established in 1981, Ved Vignan Maha Vidya Peeth (VVMVP) is a public charitable trust under the aegis of The Art of Living. We are dedicated to transforming lives through education, empowerment, and enlightenment.</p>
+                    <p>Ved Vignan Maha Vidya Peeth (VVMVP) is a distinguished public charitable trust established in 1981 under the aegis of The Art of Living, dedicated to transforming lives through education, empowerment, and enlightenment.</p>
                 </div>
                 <div class="about-pillars">
                     <article class="about-card">
                         <h4>Education Excellence</h4>
-                        <p>We provide underprivileged children with comprehensive free education, transportation, uniforms, books, and nutritious mid-day meals.</p>
+                        <p>Providing comprehensive free education, transportation, uniforms, books, and nutritious mid-day meals to underprivileged children.</p>
                     </article>
                     <article class="about-card">
                         <h4>Women Empowerment</h4>
-                        <p>Our skill development programs help women build self-reliance and achieve economic independence.</p>
+                        <p>Implementing skill development programs that foster self-reliance and economic independence among women.</p>
                     </article>
                     <article class="about-card">
                         <h4>Rural Development</h4>
-                        <p>We promote sustainable practices and help build essential infrastructure in rural communities.</p>
+                        <p>Promoting sustainable practices and building essential infrastructure in rural communities.</p>
                     </article>
                     <article class="about-card">
                         <h4>Vedic Research</h4>
-                        <p>We are committed to studying, preserving, and sharing the knowledge and wisdom of the Vedic tradition.</p>
+                        <p>Committed to the study, preservation, and propagation of ancient Vedic knowledge and wisdom.</p>
                     </article>
                     <article class="about-card">
                         <h4>Medical &amp; Social Research</h4>
-                        <p>We advance healthcare initiatives and social welfare programs for the betterment of communities.</p>
+                        <p>Advancing healthcare initiatives and social welfare programs for community betterment.</p>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section class="transformative-programs-section" aria-labelledby="transformative-programs-heading">
+            <div class="programs-showcase">
+                <h2 id="transformative-programs-heading">Our Transformative Programs</h2>
+                <p class="programs-subtitle">Discover our comprehensive range of programs designed to nurture the mind, body, and spirit, creating lasting positive change in individuals and communities.</p>
+
+                <div class="program-cards">
+                    <a class="program-card" href="https://bangaloreashram.org/happiness-program">
+                        <div class="program-image happiness-image" aria-label="Happiness Program"></div>
+                        <h3>Happiness Program</h3>
+                        <div class="program-divider" aria-hidden="true"></div>
+                        <p>A powerful stress-relief workshop that reduces stress and enhances mental clarity through breath healing techniques and meditation.</p>
+                    </a>
+
+                    <a class="program-card" href="https://www.artofliving.org/in-en/advanced-meditation-program">
+                        <div class="program-image meditation-image" aria-label="Advanced Meditation Program"></div>
+                        <h3>Advanced Meditation<br>Program</h3>
+                        <div class="program-divider" aria-hidden="true"></div>
+                        <p>Intensive residential spiritual practices for deep inner transformation and self-realization.</p>
+                    </a>
+
+                    <article class="program-card">
+                        <div class="program-image yoga-image" aria-label="Sri Sri Yoga"></div>
+                        <h3>Sri Sri Yoga</h3>
+                        <div class="program-divider" aria-hidden="true"></div>
+                        <p>A holistic approach combining yoga asanas, pranayama, meditation, and ancient yogic wisdom for complete well-being.</p>
+                    </article>
+
+                    <a class="program-card" href="https://www.artofliving.org/in-en/sahaj-samadhi-dhyana-yoga">
+                        <div class="program-image sahaj-image" aria-label="Sahaj Samadhi Meditation"></div>
+                        <h3>Sahaj Samadhi Meditation</h3>
+                        <div class="program-divider" aria-hidden="true"></div>
+                        <p>Discover the art of mantra-based meditation, understand its core principles, explore ways to overcome mental disturbances, and learn how food influences your mind and thoughts.</p>
+                    </a>
+
+                    <a class="program-card" href="https://www.artofliving.org/in-en/children-teens">
+                        <div class="program-image arts-image" aria-label="Art Excel and YES Programs"></div>
+                        <h3>Art Excel &amp; YES! Programs</h3>
+                        <div class="program-divider" aria-hidden="true"></div>
+                        <p>Specialized life skills and stress reduction programs designed specifically for children and teenagers.</p>
+                    </a>
+                </div>
+
+                <a class="programs-cta" href="https://programs.vvmvp.org/ashrams/bangalore/">Register for Programs at Bangalore Ashram <span aria-hidden="true">→</span></a>
             </div>
         </section>
 
@@ -83,22 +128,36 @@
             <div class="container">
                 <h3>Our Core Programs</h3>
                 <div class="grid-3">
-                    <div class="card">
-                        <img src="assets/hero-campus.jpg" alt="Gurukul Education">
-                        <h4>Sri Sri Gurukul</h4>
-                        <p>Preserving and promoting the authentic Vedic system of learning.</p>
-                    </div>
-                    <div class="card">
-                        <img src="assets/hero-campus.jpg" alt="Rural Projects">
-                        <h4>Rural Development</h4>
-                        <p>Sustainable initiatives empowering rural communities.</p>
-                    </div>
-                    <div class="card">
-                        <img src="assets/hero-campus.jpg" alt="Seva Activities">
-                        <h4>Social Responsibility</h4>
-                        <p>Engaging in diverse community service projects across India.</p>
-                    </div>
+                    <a class="program-card-link" href="https://vaidicpujas.org/gurukul/">
+                        <div class="card">
+                            <img src="assets/gurukul.jpg" alt="Gurukul students">
+                            <h4>Sri Sri Gurukul</h4>
+                            <p>Preserving and promoting the authentic Vedic system of learning.</p>
+                        </div>
+                    </a>
+                    <a class="program-card-link" href="https://www.artofliving.org/in-en/rural-development">
+                        <div class="card">
+                            <img src="assets/rural-development.png" alt="Rural development community">
+                            <h4>Rural Development</h4>
+                            <p>Sustainable initiatives empowering rural communities.</p>
+                        </div>
+                    </a>
+                    <a class="card school-card-link" href="https://www.artoflivingschools.org/">
+                        <img src="assets/free-schools-classroom.png" alt="Students learning in a classroom">
+                        <h4>Gift a Smile. Gift a Future.</h4>
+                        <p>The Art of Living Free Schools – 22 States | 1000+ Schools | 100,000+ Students</p>
+                    </a>
                 </div>
+            </div>
+        </section>
+
+        <section class="founder-section" aria-labelledby="founder-heading">
+            <img class="founder-portrait" src="assets/gurudev-founder.png" alt="Gurudev Sri Sri Ravi Shankar at sunset">
+            <div class="founder-content">
+                <p class="founder-eyebrow">Founder, The Art of Living</p>
+                <h2 id="founder-heading">Gurudev Sri Sri Ravi Shankar</h2>
+                <p class="founder-description">Gurudev Sri Sri Ravi Shankar is a global humanitarian, spiritual leader and ambassador of peace. Gurudev’s vision of personal and social transformation through mental health and wellness has ignited a global movement in over 182 countries, uplifting the lives of more than 100 crore+ people.</p>
+                <p class="founder-biography">Biography</p>
             </div>
         </section>
 
@@ -121,16 +180,8 @@
     </main>
 
     <!-- 3. Footer -->
-    <footer>
+    <footer id="contact">
         <div class="container footer-grid">
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#initiatives">Gurukul</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
             <div class="footer-contact">
                 <h4>Contact Us</h4>
                 <p><strong>Phone:</strong> +91 90360 05022</p>
@@ -140,12 +191,32 @@
                 <h4>Connect</h4>
                 <div class="social-icons">
                     <!-- Basic icons -->
-                    <span>FB</span> <span>TW</span> <span>IG</span>
+                    <span>FB</span> <span>TW</span>
+                    <a href="https://www.instagram.com/artofliving?dlrf=MWc2Y2tubmJmd2U2Zg==" aria-label="Follow The Art of Living on Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="instagram-gradient" x1="0" y1="1" x2="1" y2="0">
+                                    <stop offset="0" stop-color="#ffdc80"></stop>
+                                    <stop offset="0.5" stop-color="#fcaf45"></stop>
+                                    <stop offset="1" stop-color="#e1306c"></stop>
+                                </linearGradient>
+                                <radialGradient id="instagram-purple" cx="0.2" cy="1" r="1">
+                                    <stop offset="0" stop-color="#833ab4"></stop>
+                                    <stop offset="1" stop-color="#833ab4" stop-opacity="0"></stop>
+                                </radialGradient>
+                            </defs>
+                            <rect x="1" y="1" width="22" height="22" rx="6" fill="url(#instagram-gradient)"></rect>
+                            <rect x="1" y="1" width="22" height="22" rx="6" fill="url(#instagram-purple)"></rect>
+                            <rect x="5.5" y="5.5" width="13" height="13" rx="4" fill="none" stroke="#fff" stroke-width="1.8"></rect>
+                            <circle cx="12" cy="12" r="3.2" fill="none" stroke="#fff" stroke-width="1.8"></circle>
+                            <circle cx="17.4" cy="6.8" r="1.1" fill="#fff"></circle>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 VVMVP. Developed by (Your Team Name)</p>
+            <p>&copy; 2026 VVMVP. Developed by (Your Team Name)</p>
         </div>
     </footer>
 

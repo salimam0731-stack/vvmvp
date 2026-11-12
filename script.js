@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
             mainNav.classList.toggle('active');
+            menuToggle.setAttribute('aria-expanded', mainNav.classList.contains('active'));
 
             if (mainNav.classList.contains('active')) {
                 menuToggle.innerHTML = '&#10005;';
@@ -24,7 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
                 mainNav.classList.remove('active');
-                if (menuToggle) menuToggle.innerHTML = '&#9776;';
+                if (menuToggle) {
+                    menuToggle.innerHTML = '&#9776;';
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
             }
         });
     });
