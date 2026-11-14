@@ -45,4 +45,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 4000);
     }
 
+    // --- 3. Campus image slideshow ---
+    const campusSlides = document.querySelectorAll('.campus-banner-slide');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (campusSlides.length > 1 && !prefersReducedMotion) {
+        let activeCampusIndex = 0;
+
+        setInterval(() => {
+            campusSlides[activeCampusIndex].classList.remove('active');
+            activeCampusIndex = (activeCampusIndex + 1) % campusSlides.length;
+            campusSlides[activeCampusIndex].classList.add('active');
+        }, 5000);
+    }
+
 });
