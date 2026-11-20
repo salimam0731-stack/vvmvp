@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover programs for your mind, body and spirit.">
+    <title>Programs | Ved Vignan Maha Vidya Peeth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="programs.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a class="logo" href="index.html" aria-label="The Art of Living home">
+                <img src="assets/art-of-living-logo.png" alt="The Art of Living">
+            </a>
+            <nav id="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.8 12 3l9 7.8v9.1a1 1 0 0 1-1 1h-5.5v-6.2h-5V21H4a1 1 0 0 1-1-1z"/></svg>Home</a></li>
+                    <li><a href="ashrams.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9.5l8-6 8 6V20M7 11.5h10M9 15.5h6M8 20v-3h8v3"/></svg>Ashrams</a></li>
+                    <li><a href="programs.html" class="active" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5zm2 2h12M8 12h8M8 16h5"/></svg>Programs</a></li>
+                    <li><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.2 4.8 13A4.6 4.6 0 0 1 12 6.1a4.6 4.6 0 0 1 7.2 6.9z"/></svg>Donate</a></li>
+                    <li><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11.5a4 4 0 1 1 8 0M6 18.5c.5-2.4 2.5-4 6-4s5.5 1.6 6 4M5 20h14"/></svg>Volunteer</a></li>
+                    <li><a href="visitor-guidelines.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H20v17H7.5A2.5 2.5 0 0 0 5 21.5zm0 0v17M9 7h7M9 11h7"/></svg>Visitor’s Guidelines</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">&#9776;</button>
+        </div>
+    </header>
+
+    <main class="program-directory">
+        <header class="program-directory-header">
+            <h1>Programs</h1>
+            <p>Discover programs for your mind, body and spirit</p>
+        </header>
+
+        <label class="program-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                <path d="m16 16 5 5"></path>
+            </svg>
+            <span class="visually-hidden">Search programs</span>
+            <input id="program-search" type="search" placeholder="Search programs..." autocomplete="off">
+        </label>
+
+        <nav class="program-filters" aria-label="Filter programs by category">
+            <button type="button" class="program-filter is-active" data-program-filter="all" aria-pressed="true">All Programs</button>
+            <button type="button" class="program-filter" data-program-filter="beginner" aria-pressed="false">Beginner</button>
+            <button type="button" class="program-filter" data-program-filter="advanced" aria-pressed="false">Advanced</button>
+            <button type="button" class="program-filter" data-program-filter="children" aria-pressed="false">Children &amp; Teens</button>
+            <button type="button" class="program-filter" data-program-filter="donation" aria-pressed="false">Donation</button>
+            <button type="button" class="program-filter" data-program-filter="guru-puja" aria-pressed="false">Guru Puja</button>
+            <button type="button" class="program-filter" data-program-filter="online" aria-pressed="false">Online Programs</button>
+            <button type="button" class="program-filter" data-program-filter="health" aria-pressed="false">Health</button>
+            <button type="button" class="program-filter" data-program-filter="kala-kamp" aria-pressed="false">Kala Kamp</button>
+            <button type="button" class="program-filter" data-program-filter="punarnava" aria-pressed="false">Punarnava</button>
+            <button type="button" class="program-filter" data-program-filter="special" aria-pressed="false">Special Programs</button>
+        </nav>
+
+        <section class="program-grid" aria-label="Programs">
+            <a class="program-tile" href="https://bangaloreashram.org/happiness-program" data-categories="beginner health" data-search="beginner programs meditation breathing well-being">
+                <img src="assets/beginner-program-meditation.png" alt="People practicing beginner meditation outdoors">
+                <span class="program-tile-content">
+                    <span class="program-tile-title">Beginner Programs</span>
+                    <span class="program-tile-action">View Programs <span aria-hidden="true">→</span></span>
+                </span>
+            </a>
+            <a class="program-tile" href="https://bangaloreashram.org/advanced-meditation-program/" data-categories="advanced" data-search="advanced programs meditation">
+                <img src="assets/advanced-program-meditation.png" alt="Meditation silhouette against a sunrise">
+                <span class="program-tile-content">
+                    <span class="program-tile-title">Advanced Programs</span>
+                    <span class="program-tile-action">View Programs <span aria-hidden="true">→</span></span>
+                </span>
+            </a>
+            <a class="program-tile" href="https://bangaloreashram.org/utkarsha-yoga/" data-categories="children" data-search="children teens art excel yes">
+                <img src="assets/children-teens-program.png" alt="Children and teens lying together in a circle">
+                <span class="program-tile-content">
+                    <span class="program-tile-title">Children &amp; Teens</span>
+                    <span class="program-tile-action">View Programs <span aria-hidden="true">→</span></span>
+                </span>
+            </a>
+            <a class="program-tile" href="https://programs.vvmvp.org/ashrams/" data-categories="donation" data-search="donation give support">
+                <img src="assets/donation-campus.png" alt="Aerial view of the Art of Living campus donation hall">
+                <span class="program-tile-content">
+                    <span class="program-tile-title">Donation</span>
+                    <span class="program-tile-action">View Programs <span aria-hidden="true">→</span></span>
+                </span>
+            </a>
+            <a class="program-tile" href="https://vaidicpujas.org/" data-categories="guru-puja" data-search="guru puja rituals">
+                <img src="assets/guru-puja.png" alt="Offerings arranged for a Guru Puja ceremony">
+                <span class="program-tile-content">
+                    <span class="program-tile-title">Guru Puja Programs</span>
+                    <span class="program-tile-action">View Programs <span aria-hidden="true">→</span></span>
+                </span>
+            </a>
+            <a class="program-tile" href="https://programs.vvmvp.org/ashrams/" data-categories="online" data-search="online programs courses">
+                <img src="assets/online-program-meditation.png" alt="Person practicing meditation with an online program" loading="lazy">
+                <span class="program-tile-content">
+                    <span class="program-tile-title">Online Programs</span>
+                    <span class="program-tile-action">View Programs <span aria-hidden="true">→</span></span>
+                </span>
+            </a>
+            <a class="program-tile" href="https://bangaloreashram.org/sri-sri-yoga-deep-dive/" data-categories="health" data-search="health yoga wellness">
+                <img src="assets/health-wellness.png" alt="Wellness, health, and healthy lifestyle concepts" loading="lazy">
+                <span class="program-tile-content">
+                    <span class="program-tile-title">Health</span>
+                    <span class="program-tile-action">View Programs <span aria-hidden="true">→</span></span>
+                </span>
+            </a>
+            <a class="program-tile" href="https://vaidicpujas.org/gurukul/" data-categories="kala-kamp" data-search="kala kamp music arts">
+                <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="A musician performing on stage" loading="lazy">
+                <span class="program-tile-content">
+                    <span class="program-tile-title">Kala Kamp</span>
+                    <span class="program-tile-action">View Programs <span aria-hidden="true">→</span></span>
+                </span>
+            </a>
+            <a class="program-tile" href="https://ssrdp.artofliving.org/" data-categories="punarnava" data-search="punarnava renewal growth">
+                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="A young plant growing in soil" loading="lazy">
+                <span class="program-tile-content">
+                    <span class="program-tile-title">Punarnava</span>
+                    <span class="program-tile-action">View Programs <span aria-hidden="true">→</span></span>
+                </span>
+            </a>
+            <a class="program-tile" href="https://programs.vvmvp.org/ashrams/" data-categories="special" data-search="special programs events">
+                <span class="program-tile-special-art" role="img" aria-label="A glowing star for special programs">★</span>
+                <span class="program-tile-content">
+                    <span class="program-tile-title">Special Programs</span>
+                    <span class="program-tile-action">View Programs <span aria-hidden="true">→</span></span>
+                </span>
+            </a>
+        </section>
+        <p class="program-empty" role="status" hidden>No programs match your search.</p>
+    </main>
+    <footer id="contact">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-main-grid">
+                    <div class="footer-social">
+                        <div class="social-icons" aria-label="Social media">
+                            <span aria-hidden="true">f</span>
+                            <span aria-hidden="true">X</span>
+                            <a href="https://www.instagram.com/artofliving?dlrf=MWc2Y2tubmJmd2U2Zg==" aria-label="Follow The Art of Living on Instagram">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <defs>
+                                        <linearGradient id="instagram-gradient" x1="0" y1="1" x2="1" y2="0">
+                                            <stop offset="0" stop-color="#ffdc80"></stop>
+                                            <stop offset="0.5" stop-color="#fcaf45"></stop>
+                                            <stop offset="1" stop-color="#e1306c"></stop>
+                                        </linearGradient>
+                                        <radialGradient id="instagram-purple" cx="0.2" cy="1" r="1">
+                                            <stop offset="0" stop-color="#833ab4"></stop>
+                                            <stop offset="1" stop-color="#833ab4" stop-opacity="0"></stop>
+                                        </radialGradient>
+                                    </defs>
+                                    <rect x="1" y="1" width="22" height="22" rx="6" fill="url(#instagram-gradient)"></rect>
+                                    <rect x="1" y="1" width="22" height="22" rx="6" fill="url(#instagram-purple)"></rect>
+                                    <rect x="5.5" y="5.5" width="13" height="13" rx="4" fill="none" stroke="#fff" stroke-width="1.8"></rect>
+                                    <circle cx="12" cy="12" r="3.2" fill="none" stroke="#fff" stroke-width="1.8"></circle>
+                                    <circle cx="17.4" cy="6.8" r="1.1" fill="#fff"></circle>
+                                </svg>
+                            </a>
+                            <span aria-hidden="true">▶</span>
+                            <span aria-hidden="true">in</span>
+                            <span aria-hidden="true">G</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <img class="footer-logo" src="assets/art-of-living-logo-transparent.png" alt="The Art of Living">
+                        <address>
+                            Art of Living International Center,<br>
+                            Ved Vignan Maha Vidya Peeth, 21st Km,<br>
+                            Kanakapura Road, Udayapura,<br>
+                            Bangalore 560082, Karnataka, India
+                        </address>
+                        <p class="footer-contact-detail"><span aria-hidden="true">☎</span> +91 80 67262626 / 27 / 28</p>
+                        <p class="footer-contact-detail"><span aria-hidden="true">✉</span> <a href="mailto:queries@vvmvp.org">queries@vvmvp.org</a></p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-legal">
+                        <span>Privacy Policy</span>
+                        <span aria-hidden="true">|</span>
+                        <span>Cookie Policy</span>
+                        <span aria-hidden="true">|</span>
+                        <span>Terms of Use</span>
+                    </div>
+                    <p>&copy; 2026 Art of Living International Center</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="programs.js"></script>
+</body>
+</html>
