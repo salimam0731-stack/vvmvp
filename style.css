@@ -621,8 +621,12 @@ header {
 
 .program-card h2,
 .program-card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 18px 0 12px;
     padding: 0 16px;
+    min-height: 3.6em;
     border: none;
     color: #4a2512;
     font-family: Georgia, 'Times New Roman', serif;
@@ -630,6 +634,11 @@ header {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.03em;
+}
+
+.program-card h2 > span,
+.program-card h3 > span {
+    width: 100%;
 }
 
 .program-divider {
@@ -1606,6 +1615,8 @@ footer {
     .program-cards { grid-template-columns: 1fr; }
     .program-card h2,
     .program-card h3 { font-size: 1.9rem; }
+    .transformative-programs-section .program-card h2,
+    .transformative-programs-section .program-card h3 { min-height: 0; }
     .program-card p { font-size: 1rem; }
     .programs-subtitle { margin-bottom: 28px; font-size: 1.1rem; }
     .programs-subtitle::after { width: 180px; }
